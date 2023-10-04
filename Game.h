@@ -8,13 +8,16 @@ class Game
 {
 private:
 	int m_target, m_num;
+	int m_left, m_right;
 public:
-	Game(int left, int right);
 
 	int getNum();
 	int getTarget();
 
 	void setNum();
+	void setTarget();
+	void setLeft();
+	void setRight();
 
 	// 用来判断数大了还是小了，或者猜对了
 	// 1大了，0相等，-1小了

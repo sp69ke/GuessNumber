@@ -4,12 +4,6 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-Game::Game(int left, int right)
-{
-	m_target = rand() % ((right - left + 1) + left);
-	m_num = -1;
-}
-
 int Game::getNum()
 {
 	return m_num;
@@ -22,7 +16,25 @@ int Game::getTarget()
 
 void Game::setNum()
 {
+	cout << "请输入你猜的数：";
 	std::cin >> m_num;
+}
+
+void Game::setTarget()
+{
+	m_target = rand() % ((m_right - m_left + 1) + m_left);
+}
+
+void Game::setLeft()
+{
+	cout << "请输入最小值：";
+	cin >> m_left;
+}
+
+void Game::setRight()
+{
+	cout << "请输入最大值：";
+	cin >> m_right;
 }
 
 int Game::judge()
