@@ -58,6 +58,6 @@ int Game::judge()
 
 void Game::exitGame()
 {
-	cin.get();
+	system("pause");
 	exit(0);
 }
