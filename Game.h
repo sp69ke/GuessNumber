@@ -1,5 +1,6 @@
 // Game.h 用来声明Game类和成员
 // Game类用来控制游戏的行为
+
 #pragma once
 #ifndef GAME_H
 #define GAME_H
