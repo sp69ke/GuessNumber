@@ -1,4 +1,4 @@
-// 实现Game类
+// Game.cpp 实现Game类
 
 #include "Game.h"
 #include <iostream>
